@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.add-task-btn {
+    width: 40%;
+}
+
+.add-task-container {
+    box-shadow: 0.1px 0.1px 2px rgb(0 0 0 / 40%);
+}
+
+.levels-buttons button {
+    width: 30%;
+    position: relative;
+}
+
+.levels-buttons .form-check-input {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-0%, -64%);
+}
+
+.tasks-container {
+    box-shadow: 0.1px 0.1px 2px rgb(0 0 0 / 40%);
+    padding: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    position: relative;
+    flex-basis: 20%;
+}
+
+button {
+    box-shadow: 0px 3px 6px #777;
+}
+
+.buttons button:focus {
+    box-shadow: 0px 3px 6px #777 !important;
+}
+
+.tasks-container .tasks .title {
+    text-align: center;
+    background: #eee;
+    padding: 10px;
+    font-size: 19px;
+}
+
+form :is(button, input):focus {
+    outline: solid #00bcd4 4px;
+}
+
+::placeholder {
+    color: #b8b8b8;
+}
+
+.add-todo {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 140px;
+}
+
+.add-todo input {
+    background-color: white;
+}
+
+.add-todo button {
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todos-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.todo-card {
+    background-color: whitesmoke;
+    padding: 16px 24px;
+    border-radius: 8px;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-card p {
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.todo-card .remove {
+    background-color: transparent;
+    color: #f44336;
+    border: 0;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s;
+    outline: none;
+    flex-shrink: 0;
+}
+
+.todo-card:hover .remove {
+    opacity: 1;
+}
+
+.todo-card.completed {
+    background-color: rgb(221, 221, 221);
+}
+
+.todo-card.completed p {
+    text-decoration: line-through;
+}
+
+.filters {
+    display: flex;
+    gap: 16px;
+}
+
+.filters button {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+}
+
+.filters button.active {
+    background-color: #ffffff75;
+}
+
+.add-todo {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 140px;
+}
+
+.add-todo input {
+    background-color: white;
+}
+
+.add-todo button {
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todos-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.todo-card {
+    background-color: whitesmoke;
+    padding: 16px 24px;
+    border-radius: 8px;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-card p {
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.todo-card .remove {
+    background-color: transparent;
+    color: #f44336;
+    border: 0;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s;
+    outline: none;
+    flex-shrink: 0;
+}
+
+.todo-card:hover .remove {
+    opacity: 1;
+}
+
+.todo-card.completed {
+    background-color: rgb(221, 221, 221);
+}
+
+.todo-card.completed p {
+    text-decoration: line-through;
+}
+
+.filters {
+    display: flex;
+    gap: 16px;
+}
+
+.filters button {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+}
+
+.filters button.active {
+    background-color: #ffffff75;
+}
